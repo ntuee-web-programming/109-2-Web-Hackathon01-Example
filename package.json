@@ -1,0 +1,22 @@
+{
+  "name": "109-2-web-hackathon01",
+  "version": "1.0.0",
+  "description": "A simple YouTube-like frontend with HTML, CSS and JavaScript.",
+  "main": "main.js",
+  "scripts": {
+    "test": "npx cypress run --spec cypress/integration/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyh0913/109-2-Web-Hackathon01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andyh0913/109-2-Web-Hackathon01/issues"
+  },
+  "homepage": "https://github.com/andyh0913/109-2-Web-Hackathon01#readme",
+  "devDependencies": {
+    "cypress": "^6.6.0"
+  }
+}
