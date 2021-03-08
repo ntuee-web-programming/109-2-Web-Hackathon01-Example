@@ -1,6 +1,9 @@
 # 109-1-Web-Hackathon01 - MeTube
 A simple YouTube-like frontend with HTML, CSS and JavaScript.
 
+## Demo Video
+[Link](https://youtu.be/x-Q6qfIpd8Q)
+
 ## Checkpoints
 
 ### Basic
