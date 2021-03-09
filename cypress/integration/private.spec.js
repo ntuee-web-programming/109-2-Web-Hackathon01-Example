@@ -24,12 +24,9 @@ describe('Hackathon 1 Test', () => {
         // Test a space-only comment
         cy.get('#comment-input').clear()
         cy.get('#comment-input').type('   ')
-        cy.get('#comment-button').then((comment_button) => {
-            if (comment_button.is(':disabled')){
-                comment_button.click()
-            }
-        })
-        cy.get('#comment-group').find('.comment:last-child').contains('test')
+        cy.get('#comment-button').should('be.disabled')
+        cy.get('#comment-input').type('test')
+        cy.get('#comment-button').should('not.be.disabled')
     })
 
     // checkpoint 10
@@ -65,14 +62,7 @@ describe('Hackathon 1 Test', () => {
         cy.get('#comment-input').type('test')
         cy.get('#comment-button').click()
         cy.get('#comment-num').should('have.text', '2則留言')
-        cy.get('#comment-button').then((comment_button) => {
-            if (comment_button.is(':disabled')){
-                comment_button.click()
-                comment_button.click()
-                comment_button.click()
-            }
-        })
-        cy.get('#comment-num').should('have.text', '2則留言')
+        cy.get('#comment-button').should('be.disabled')
         cy.get('#comment-input').type('test')
         cy.get('#comment-button').click()
         cy.get('#comment-input').type('test')

@@ -44,6 +44,7 @@ let click_handler = (e) => {
         new_comment.lastElementChild.lastElementChild.innerHTML = input.value.trim();
         comment_group.appendChild(new_comment)
         input.value = "";
+        comment_button.disabled = true;
         comment_button.setAttribute("style", `background-color: #ccc`)
         comment_num.innerHTML = `${comment_group.children.length}則留言`
     }
