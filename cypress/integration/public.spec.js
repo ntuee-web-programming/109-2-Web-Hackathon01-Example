@@ -88,6 +88,8 @@ describe('Hackathon 1 Test', () => {
         cy.get('#comment-group').find('.comment:last-child').get('.comment-img')
         cy.get('#comment-group').find('.comment:last-child').contains('Toby Chen')
         cy.get('#comment-group').find('.comment:last-child').contains('test')
+        cy.get('#cancel-button').should('be.visible')
+        cy.get('#comment-button').should('be.visible')
     })
 
     // checkpoint 11
